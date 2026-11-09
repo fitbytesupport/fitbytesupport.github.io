@@ -26,7 +26,8 @@
     <h2>What leaves your phone, and why</h2>
 
     <h3>Photos you scan (Google Gemini)</h3>
-    <p>When you take a photo to scan, a smaller copy is sent to Google's Gemini AI to work out the food and its nutrition. The camera is only used while the scanner is open, and only the photo you take is sent.</p>
+    <p>When you take a photo to scan, a smaller copy is sent to Google's Gemini AI to work out the food and its nutrition. It passes through a small relay we run on Cloudflare, which forwards it and doesn't keep the photo. The camera is only used while the scanner is open, and only the photo you take is sent.</p>
+    <p>To apply daily scan limits and prevent abuse, the relay counts scans using a random ID created when you install the app and a scrambled version of your IP address. These counts are deleted within about a day.</p>
     <p>Google says it doesn't use this content to improve its products under the paid service we use. Google logs prompts and responses for up to 55 days to detect misuse and meet legal requirements, and authorised Google staff may review flagged content. Please don't photograph people or private documents with the scanner.</p>
 
     <h3>Barcodes (Open Food Facts)</h3>
